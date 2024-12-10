@@ -12,7 +12,7 @@ export const Contacts = () => {
 return(
     <div className="container">
         <h1>Contacts</h1>
-        <Link to ='/add contact className="btn btn danger'> Add new contact </Link> 
+        <Link to ='/add contact className="btn btn danger'></Link> 
         {store.contacts.map((contact) => (
             <ContactCard key={contact.id} contact={contact}/>
         ))}

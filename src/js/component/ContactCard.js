@@ -5,13 +5,13 @@ export const ContactCard = ({contact}) => {
     const {actions} = useContext (Context);
 
     return(
-        <div className="card mb-5">
-            <div className="card body">
+        <div className="container card mt-5 w-50 p-3">
+            <div className="card body d-grid gap-3 ">
                 <h5 className="card title">{contact.name}</h5>
-                <p className="card text">Email:{contact.email}</p>
-                <p className="card text">Phone:{contact.phone}</p>
-                <p className="card text">Adress:{contact.adress}</p>
-                <button className="btn btn-danger"
+                <p className="card text text-secondary">Email:   {contact.email}</p>
+                <p className="card text text-secondary">Phone:   {contact.phone}</p>
+                <p className="card text text-secondary">Adress:   {contact.address}</p>
+                <button className="btn btn-danger btn-sm"
                     onClick={() => actions.deleteContact(contact.id)}>
                     DELETE
                 </button>

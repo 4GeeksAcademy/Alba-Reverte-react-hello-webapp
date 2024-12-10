@@ -1,3 +1,5 @@
-/* 
-    General Styles
-*/
+.card-body {
+    width: 50px;
+    height: 100px;
+}
+

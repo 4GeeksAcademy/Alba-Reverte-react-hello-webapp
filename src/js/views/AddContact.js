@@ -8,7 +8,7 @@ export const AddContact = () => {
         name: "",
         email: "",
         phone: "",
-        adress: ""
+        address: ""
     })
     const navigate = useNavigate();
     const handleSubmit = async (e) => {
@@ -57,8 +57,8 @@ export const AddContact = () => {
                     <input
                     type= "text"
                     className="form-control"
-                    value = {contact.adress}
-                    onChange={(e) => setContact({...contact, adress: e.target.value})}
+                    value = {contact.address}
+                    onChange={(e) => setContact({...contact, address: e.target.value})}
                     />
                 </div>
                 <button type='submit' className="btn btn-danger">ADD THE CONTACT</button>
