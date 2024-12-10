@@ -19,8 +19,8 @@ export const AddContact = () => {
     };
 
     return(
-        <div className="container">
-            <h1>Add a new contact</h1>
+        <div className="container card mt-5 w-50 p-3 bg-warning p-2 text-dark bg-opacity-25">
+            <div className="d-flex d-flex justify-content-center form-control-lg">ADD A NEW CONTACT</div>
             <form onSubmit = {handleSubmit}>
                 <div className="mb-5">
                     <label className="form-label">NAME</label>
@@ -61,7 +61,7 @@ export const AddContact = () => {
                     onChange={(e) => setContact({...contact, address: e.target.value})}
                     />
                 </div>
-                <button type='submit' className="btn btn-danger">ADD THE CONTACT</button>
+                <button type='submit' className="buttom-add btn btn-outline-success d-flex float-end">ADD THE CONTACT</button>
             </form>
         </div>
     );

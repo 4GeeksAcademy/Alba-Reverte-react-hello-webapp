@@ -1,5 +1,11 @@
-.card-body {
-    width: 50px;
-    height: 100px;
+
+.container-buttom {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttom-add {
+    display: flex;
+    justify-content: flex-end;
 }
 
